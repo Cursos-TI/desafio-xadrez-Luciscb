@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int t, b, r;
+    int t, b = 1, r = 1, c = 1;
 
     //MOVIMENTAÇÃO TORRE:
     for (t = 0; t < 5; t++)
@@ -14,13 +14,22 @@ int main() {
     {
         printf("Cima, Direita\n", b);
         b++;
-    } while (b < 5);
+    } while (b <= 5);
     
     //MOVIMENTAÇÃO RAINHA
-    while (r < 8)
+    while (r <= 8)
     {
         printf("Esquerda\n", r);
         r++;
+    }
+    
+    while (c--)
+    {
+       for (int i = 0; i < 2; i++)
+       {
+        printf("Cima\n");
+       }
+       printf("Direita\n");
     }
     
 
